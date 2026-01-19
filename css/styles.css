@@ -10,8 +10,10 @@ body{
 }
 .container {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 20px;
+  
+  
 }
 
 /* header section */
@@ -78,7 +80,7 @@ body{
     min-height: 70vh;
     background-position: center center;
     background-size: cover;
-     text-align: center;
+    text-align: center;
     padding: 100px 0;
     width: 100%;
 }
@@ -149,44 +151,141 @@ body{
      align-items: center;
      cursor: pointer;
 }
+/* about section */
+.about {
+  background-color: #1A0B2E;
+  padding: 50px 0;
+  text-align: center;
+}
+.about h2{
+  font-size: 48px;
+  font-weight: bold;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+.about p{
+  font-size: 16px;
+  line-height: 20px;
+}
+.about hr{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid rgba(65, 37, 103, 1);
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.abt-card h3 {
+  font-size: 28px;
+  color: #00FF88;
+  padding-bottom: 10px;
+}
+.abt-card p{
+  font-size: 16px;
+  line-height: 20px;
+}
+/* feature section */
+.features {
+  background-color: #230E3D;
+  padding: 50px 0;
+  text-align: center;
+}
+.features h2{
+font-style: Bold;
+font-size: 48px;
+font-weight: 700;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
 
 
+}
+.card {
+  background: rgba(53, 17, 101, 0.4);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: start;
+  align-items: center;
+}
+/* .card img{
+  height: 60px;
+  width: 60px;
+} */
+ .card h3{
+font-style: Bold;
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+padding: 16px 0;
+ }
+ .card p{
+  font-size: 16px;
+ }
+.one{
+  
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.two{
+  
+  grid-column: span 2;
+  grid-row: span 1;
 
+}
+.three{
+  grid-column: span 2;
+  grid-row: span 1;
+  padding: 40px 65px;
 
+}
+.four{
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.five{
+  grid-column: span 1;
+  grid-row: span 1;
+}
+/* Episodes section */
 
+.episodes {
+  background-color: #1A0B2E;
+  padding: 50px 0;
+  
 
+}
+.episode-container{
+ max-width: 70%;
+}
 
+.episode-grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  
+}
+.episode{
+  background-color: #250D44;
+  border-radius: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.episode iframe {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+}
 
 
 
@@ -229,19 +328,25 @@ body{
     margin-bottom: 20px;
   }
 
-  /* .img-2{
-    top: -120px;
-    width: 220px; */
+  
+   .about-cards {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
 
-
-  /* .badge{
-    width: 60px;
-    height: 30px;
-    font-size: 14px;
-    margin-left: 50px;
-    margin-top: 10px;
-  } */
-
+  .feature-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .three{
+    padding: 30px;
+  } 
+  .episode-grid {
+    grid-template-columns: 1fr;
+  }
   
 }
 @media (min-width:576px) and (max-width:992px) {
@@ -257,22 +362,16 @@ body{
     position: relative;
     padding-top: 50px;
 }
-  /* .banner{
-    padding: 80px 0;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .banner-content h1{
-    font-size: 44px;
-  }
-
-  .banner-text{
-    margin-top: -40px;
-  } */
+  
  .badge{
    margin-top: 50px;
  }
+ .about-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .episode-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
   
 }
 
