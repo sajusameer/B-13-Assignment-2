@@ -76,17 +76,17 @@ body{
     min-height: 100vh;
     background-position: center center;
     background-size: cover;
-    
+     text-align: center;
     padding: 100px 0;
     width: 100%;
 }
-.banner-content{
+/* .banner-content{
   height: 558px;
   width: 550px;
   text-align: center;
   justify-content: center;
   align-items: center;
-}
+} */
 .circle{
     position: relative;
 }
@@ -250,6 +250,21 @@ body{
     padding: 8px 16px;
     font-size: 14px;
   }
+  .banner{
+    padding: 80px 0;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .banner-content h1{
+    font-size: 44px;
+  }
+
+  .banner-text{
+    margin-top: -40px;
+  }
+
+  
 }
 
 
