@@ -425,7 +425,7 @@ margin-bottom: 40px;
    .banner{
     background-image: url("../images/bg-mobile.png");
     background-position: center center;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     
   }
@@ -497,9 +497,12 @@ margin-bottom: 40px;
   }
   .social-icon span{
   padding: 10px;
+  
 
 }
-
+.footer{
+  background-size: 100% 100%;
+}
 
   
 }
@@ -514,9 +517,12 @@ margin-bottom: 40px;
   }
   .circle{
     position: relative;
-    padding-top: 50px;
+    padding-top: 10px;
+    /* size-adjust: 50% 50%; */
 }
-  
+  /* .img-1{
+    size-adjust: 10% 10%;
+  } */
  .badge{
    margin-top: 50px;
  }
